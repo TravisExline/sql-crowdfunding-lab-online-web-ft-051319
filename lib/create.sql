@@ -3,16 +3,19 @@ CREATE TABLE project (
   title TEXT,
   category TEXT,
   funding_goal INTEGER,
-  start_date TEXT,
-  end_date TEXT);
+  start_date DATE,
+  end_date DATE
+);
 
 CREATE TABLE user (
   id INTEGER PRIMARY KEY,
   name TEXT,
-  age INTEGER);
+  age INTEGER
+);
 
 CREATE TABLE pledge (
   id INTEGER PRIMARY KEY,
   amount INTEGER,
-  user_id TEXT,
-  project_id TEXT);
+  user_id INTEGER,
+  project_id INTEGER
+);
