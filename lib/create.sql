@@ -13,4 +13,6 @@ CREATE TABLE user (
 
 CREATE TABLE pledge (
   id INTEGER PRIMARY KEY,
-  amount INTEGER); 
+  amount INTEGER,
+  user_id TEXT,
+  project_id TEXT);
